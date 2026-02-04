@@ -1,0 +1,3731 @@
+{
+  "metadata": {
+    "source_path": "framework\\01-structure\\project-skeleton\\sources\\raw\\[TRANSLATE] E3.1 Open data estadísticos de las transacciones.docx",
+    "source_filename": "[TRANSLATE] E3.1 Open data estadísticos de las transacciones.docx",
+    "file_type": ".docx",
+    "file_size_bytes": 1111901,
+    "ingestion_timestamp": "2026-02-04T16:03:44.590257",
+    "docling_version": "unknown",
+    "title": "",
+    "author": "",
+    "creation_date": "",
+    "modification_date": "",
+    "page_count": 0,
+    "word_count": 611,
+    "language": "",
+    "custom_properties": {}
+  },
+  "main_text": [
+    {
+      "id": "sec_0_default",
+      "title": "Document Content",
+      "level": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "self_ref",
+          "level": "#/body",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "parent",
+          "level": 0,
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "children",
+          "level": [
+            "cref='#/texts/0'",
+            "cref='#/texts/1'",
+            "cref='#/texts/2'",
+            "cref='#/pictures/0'",
+            "cref='#/groups/0'",
+            "cref='#/texts/10'",
+            "cref='#/tables/0'",
+            "cref='#/texts/11'",
+            "cref='#/texts/12'",
+            "cref='#/texts/13'",
+            "cref='#/texts/14'",
+            "cref='#/groups/17'"
+          ],
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "content_layer",
+          "level": "body",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "meta",
+          "level": 0,
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "name",
+          "level": "_root_",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "label",
+          "level": "unspecified",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        }
+      ],
+      "subsections": [],
+      "page_start": null,
+      "page_end": null
+    }
+  ],
+  "tables": [
+    {
+      "id": "tbl_0",
+      "caption": "",
+      "headers": [
+        "VERSIÓN",
+        "FECHA",
+        "DESCRIPCIÓN"
+      ],
+      "rows": [
+        [
+          "01",
+          "",
+          "Elaboración del documento"
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "cells": [],
+      "page_number": null,
+      "bounding_box": null
+    }
+  ],
+  "figures": [
+    {
+      "id": "fig_0",
+      "asset_path": "assets/[TRANSLATE] E3.1 Open data estadísticos de las transacciones/fig_0.png",
+      "alt_text": "",
+      "caption": "",
+      "figure_type": "image",
+      "page_number": null,
+      "bounding_box": null,
+      "width": 682,
+      "height": 458,
+      "format": "png",
+      "extraction_error": ""
+    },
+    {
+      "id": "fig_1",
+      "asset_path": "assets/[TRANSLATE] E3.1 Open data estadísticos de las transacciones/fig_1.png",
+      "alt_text": "",
+      "caption": "",
+      "figure_type": "image",
+      "page_number": null,
+      "bounding_box": null,
+      "width": 738,
+      "height": 93,
+      "format": "png",
+      "extraction_error": ""
+    },
+    {
+      "id": "fig_2",
+      "asset_path": "assets/[TRANSLATE] E3.1 Open data estadísticos de las transacciones/fig_2.png",
+      "alt_text": "",
+      "caption": "",
+      "figure_type": "image",
+      "page_number": null,
+      "bounding_box": null,
+      "width": null,
+      "height": null,
+      "format": "",
+      "extraction_error": "No image data available"
+    }
+  ],
+  "code_blocks": [],
+  "equations": [],
+  "hyperlinks": [],
+  "footnotes": [],
+  "headers": [],
+  "footers": [],
+  "raw_text": "Código\n\nTRANSLATE – E3.1\n\nFecha\n\nSeptiembre 2024\n\nVersión\n\n01\n\n**Control de versiones**\n\n| VERSIÓN   | FECHA   | DESCRIPCIÓN               |\n|-----------|---------|---------------------------|\n| 01        |         | Elaboración del documento |\n|           |         |                           |\n|           |         |                           |\n|           |         |                           |\n\n**Aprobación**\n\n## 1 Contenido\n\n[1\tIntroducción\t4](.)\n\n[2\tSelección de datos\t4](.)\n\n[3\tVista de Base de Datos para OpenData\t6](.)\n\n[4\tCriterios de agrupación\t7](.)\n\n## 2 Introducción\n\nEste documento corresponde al entregable E3.1 del proyecto TRANSLATE. Su propósito es evidenciar el desarrollo técnico realizado para habilitar la aportación de datos estadísticos a iniciativas de Open Data, a partir de los mensajes gestionados por la plataforma.\n\n## 3 Requisitos\n\nEn este apartado se detallan los requisitos necesarios para garantizar que la plataforma TRANSLATE pueda cumplir con sus objetivos de Open Data. Estos son:\n\n- **Recolección de datos anonimizados**\n    - Los datos publicados no contienen información sensible ni identificadores directos.\n    - Los conjuntos de datos cumplen con los criterios de anonimización y agregación.\n    - Los usuarios pueden acceder y descargar los datos abiertos desde la web.\n    - Se documenta el proceso de anonimización y se audita periódicamente.\n- **Publicación periódica de los datos abiertos:**\n    - Los datos abiertos se publican y actualizan en la web según la periodicidad establecida.\n    - Los conjuntos de datos son accesibles y descargables por cualquier usuario.\n    - Se mantienen versiones históricas accesibles.\n    - La documentación sobre los datos y el proceso de actualización está disponible y es comprensible.\n    - Se audita periódicamente la correcta publicación y actualización de los datos.\n\n## 4 Selección de datos\n\nLa elección de los datos publicado como OpenData en TRANSLATE busca aportar valor informativo preservando la confidencialidad. Se publicarán datos agregados de actividad, como periodo, ripo de mensajes y estados, respetando los principios de seguridad y transparencia definidos para este proyecto. Para ello, los campos propuestos son:\n\n- **Periodo:** Mes y año en que se procesó el mensaje en formato YYYY-MM.\n- **MessageOwner:** Nombre de la entidad pública (origen o destino) que define el mensaje original o transformado. Si no hay entidad pública se muestra como “Privado”.\n- **TipoMensajeOriginal:** Tipo o formato del mensaje original recibido.\n- **TipoMensajeTransformado:** Tipo o formato del mensaje resultante después de la transformación.\n- **Estado:** Estado del mensaje ( **PEN** = Pendiente, **PRO** = Procesado, **ERR** = Error, **OMT** = Omitted).\n- **VolumenMensajes:** Número total de mensajes que coinciden con los criterios agrupados.\n\n## 5 Vista de Base de Datos para OpenData\n\nA continuación, se presenta el script que extraerá los datos en el formato indicado.\n\nWITH Mensajes AS (\n\nSELECT\n\nFORMAT(af.[Date], 'yyyy-MM') AS Periodo,\n\nCOALESCE(\n\nCASE\n\nWHEN fnt_orig.Private = 0 THEN od_orig.Name\n\nWHEN fnt_dest.Private = 0 THEN od_dest.Name\n\nELSE NULL\n\nEND, 'Privado') AS MessageOwner,\n\naf.[OriginFileNameType] AS TipoMensajeOriginal,\n\naf.[DestinationFileNameType] AS TipoMensajeTransformado,\n\nst.[Name] AS Estado\n\nFROM\n\nAudit.AuditFile af\n\nINNER JOIN\n\nAudit.State st ON af.StateId = st.Id\n\nLEFT JOIN\n\nMessaging.FileNameType fnt_orig ON fnt_orig.Acronym = af.OriginFileNameType\n\nLEFT JOIN\n\nMessaging.FileNameType fnt_dest ON fnt_dest.Acronym = af.DestinationFileNameType\n\nLEFT JOIN\n\nParty.OriginDestination od_orig ON od_orig.Id = fnt_orig.OriginDestinationId AND od_orig.IsOwnerFile = 1\n\nLEFT JOIN\n\nParty.OriginDestination od_dest ON od_dest.Id = fnt_dest.OriginDestinationId AND od_dest.IsOwnerFile = 1\n\nWHERE\n\naf.AuditDeletionDate IS NULL\n\n)\n\nSELECT\n\nPeriodo,\n\nMessageOwner,\n\nTipoMensajeOriginal,\n\nTipoMensajeTransformado,\n\nEstado,\n\nCOUNT(*) AS VolumenMensajes\n\nFROM Mensajes\n\nGROUP BY\n\nPeriodo, MessageOwner, TipoMensajeOriginal, TipoMensajeTransformado, Estado;\n\nPantalla   Vista de resultados de OpenData.\n\n## 6 Criterios de agrupación\n\nEl volumen de mensajes representa una agrupación de ellos según los siguientes criterios:\n\n- **Periodo:** Agrupa los mensajes por mes-año de procesamiento.\n- **MessageOwner:** Agrupa según la entidad pública propietaria del mensaje.\n- **TipoMensajeOriginal:** Agrupa por tipo de mensaje recibido.\n- **TipoMensajeTransformado:** Agrupa por tipo de mensaje enviado (transformado).\n- **Estado:** Agrupa por el estado del mensaje ( **PEN** = Pendiente, **PRO** = Procesado, **ERR** = Error).",
+  "_schema_version": "2.0",
+  "_format": "lossless_structured_document",
+  "docling_native": {
+    "schema_name": "DoclingDocument",
+    "version": "1.9.0",
+    "name": "[TRANSLATE] E3.1 Open data estadísticos de las transacciones",
+    "origin": {
+      "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "binary_hash": 2772573837813365358,
+      "filename": "[TRANSLATE] E3.1 Open data estadísticos de las transacciones.docx"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/groups/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          }
+        ],
+        "content_layer": "body",
+        "name": "textbox",
+        "label": "section"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/texts/23"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/25"
+          },
+          {
+            "$ref": "#/groups/2"
+          },
+          {
+            "$ref": "#/texts/30"
+          },
+          {
+            "$ref": "#/groups/3"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/26"
+          },
+          {
+            "$ref": "#/texts/27"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/31"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/texts/36"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/47"
+          },
+          {
+            "$ref": "#/texts/50"
+          },
+          {
+            "$ref": "#/texts/61"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/texts/38"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/texts/41"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/texts/43"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/texts/44"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/texts/47"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/texts/50"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/51"
+          },
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          },
+          {
+            "$ref": "#/texts/56"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/texts/61"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/texts/108"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/110"
+          },
+          {
+            "$ref": "#/texts/113"
+          },
+          {
+            "$ref": "#/texts/116"
+          },
+          {
+            "$ref": "#/texts/119"
+          },
+          {
+            "$ref": "#/texts/122"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/12",
+        "parent": {
+          "$ref": "#/texts/110"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/111"
+          },
+          {
+            "$ref": "#/texts/112"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/13",
+        "parent": {
+          "$ref": "#/texts/113"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/114"
+          },
+          {
+            "$ref": "#/texts/115"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/14",
+        "parent": {
+          "$ref": "#/texts/116"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/117"
+          },
+          {
+            "$ref": "#/texts/118"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/15",
+        "parent": {
+          "$ref": "#/texts/119"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/120"
+          },
+          {
+            "$ref": "#/texts/121"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/16",
+        "parent": {
+          "$ref": "#/texts/122"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/123"
+          },
+          {
+            "$ref": "#/texts/124"
+          },
+          {
+            "$ref": "#/texts/125"
+          },
+          {
+            "$ref": "#/texts/126"
+          },
+          {
+            "$ref": "#/texts/127"
+          },
+          {
+            "$ref": "#/texts/128"
+          },
+          {
+            "$ref": "#/texts/129"
+          },
+          {
+            "$ref": "#/texts/130"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      },
+      {
+        "self_ref": "#/groups/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "name": "page header",
+        "label": "section"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Código",
+        "text": "Código",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TRANSLATE – E3.1",
+        "text": "TRANSLATE – E3.1",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Fecha",
+        "text": "Fecha",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Septiembre 2024",
+        "text": "Septiembre 2024",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Versión",
+        "text": "Versión",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "01",
+        "text": "01",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Control de versiones",
+        "text": "Control de versiones",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Aprobación",
+        "text": "Aprobación",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/66"
+          },
+          {
+            "$ref": "#/texts/108"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "1 Contenido",
+        "text": "1 Contenido",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "1\tIntroducción\t4",
+        "text": "1\tIntroducción\t4",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "hyperlink": "."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "2\tSelección de datos\t4",
+        "text": "2\tSelección de datos\t4",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "hyperlink": "."
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "3\tVista de Base de Datos para OpenData\t6",
+        "text": "3\tVista de Base de Datos para OpenData\t6",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "hyperlink": "."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "4\tCriterios de agrupación\t7",
+        "text": "4\tCriterios de agrupación\t7",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "hyperlink": "."
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/22"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "2 Introducción",
+        "text": "2 Introducción",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/texts/21"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Este documento corresponde al entregable E3.1 del proyecto TRANSLATE. Su propósito es evidenciar el desarrollo técnico realizado para habilitar la aportación de datos estadísticos a iniciativas de Open Data, a partir de los mensajes gestionados por la plataforma.",
+        "text": "Este documento corresponde al entregable E3.1 del proyecto TRANSLATE. Su propósito es evidenciar el desarrollo técnico realizado para habilitar la aportación de datos estadísticos a iniciativas de Open Data, a partir de los mensajes gestionados por la plataforma.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/groups/1"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "3 Requisitos",
+        "text": "3 Requisitos",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/texts/23"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "En este apartado se detallan los requisitos necesarios para garantizar que la plataforma TRANSLATE pueda cumplir con sus objetivos de Open Data. Estos son:",
+        "text": "En este apartado se detallan los requisitos necesarios para garantizar que la plataforma TRANSLATE pueda cumplir con sus objetivos de Open Data. Estos son:",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Recolección de datos anonimizados",
+        "text": "Recolección de datos anonimizados",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Los datos publicados no contienen información sensible ni identificadores directos.",
+        "text": "Los datos publicados no contienen información sensible ni identificadores directos.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Los conjuntos de datos cumplen con los criterios de anonimización y agregación.",
+        "text": "Los conjuntos de datos cumplen con los criterios de anonimización y agregación.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Los usuarios pueden acceder y descargar los datos abiertos desde la web.",
+        "text": "Los usuarios pueden acceder y descargar los datos abiertos desde la web.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Se documenta el proceso de anonimización y se audita periódicamente.",
+        "text": "Se documenta el proceso de anonimización y se audita periódicamente.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Publicación periódica de los datos abiertos:",
+        "text": "Publicación periódica de los datos abiertos:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Los datos abiertos se publican y actualizan en la web según la periodicidad establecida.",
+        "text": "Los datos abiertos se publican y actualizan en la web según la periodicidad establecida.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Los conjuntos de datos son accesibles y descargables por cualquier usuario.",
+        "text": "Los conjuntos de datos son accesibles y descargables por cualquier usuario.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Se mantienen versiones históricas accesibles.",
+        "text": "Se mantienen versiones históricas accesibles.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "La documentación sobre los datos y el proceso de actualización está disponible y es comprensible.",
+        "text": "La documentación sobre los datos y el proceso de actualización está disponible y es comprensible.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "Se audita periódicamente la correcta publicación y actualización de los datos.",
+        "text": "Se audita periódicamente la correcta publicación y actualización de los datos.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        },
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/groups/4"
+          },
+          {
+            "$ref": "#/texts/64"
+          },
+          {
+            "$ref": "#/texts/65"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "4 Selección de datos",
+        "text": "4 Selección de datos",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/texts/36"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "La elección de los datos publicado como OpenData en TRANSLATE busca aportar valor informativo preservando la confidencialidad. Se publicarán datos agregados de actividad, como periodo, ripo de mensajes y estados, respetando los principios de seguridad y transparencia definidos para este proyecto. Para ello, los campos propuestos son:",
+        "text": "La elección de los datos publicado como OpenData en TRANSLATE busca aportar valor informativo preservando la confidencialidad. Se publicarán datos agregados de actividad, como periodo, ripo de mensajes y estados, respetando los principios de seguridad y transparencia definidos para este proyecto. Para ello, los campos propuestos son:",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/5"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Periodo:",
+        "text": "Periodo:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Mes y año en que se procesó el mensaje en formato YYYY-MM.",
+        "text": "Mes y año en que se procesó el mensaje en formato YYYY-MM.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/6"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "MessageOwner:",
+        "text": "MessageOwner:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Nombre de la entidad pública (origen o destino) que define el mensaje original o transformado. Si no hay entidad pública se muestra como “Privado”.",
+        "text": "Nombre de la entidad pública (origen o destino) que define el mensaje original o transformado. Si no hay entidad pública se muestra como “Privado”.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/7"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeOriginal:",
+        "text": "TipoMensajeOriginal:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Tipo o formato del mensaje original recibido.",
+        "text": "Tipo o formato del mensaje original recibido.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/8"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeTransformado:",
+        "text": "TipoMensajeTransformado:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Tipo o formato del mensaje resultante después de la transformación.",
+        "text": "Tipo o formato del mensaje resultante después de la transformación.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/9"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Estado:",
+        "text": "Estado:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Estado del mensaje (",
+        "text": "Estado del mensaje (",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "PEN",
+        "text": "PEN",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Pendiente,",
+        "text": "= Pendiente,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "PRO",
+        "text": "PRO",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Procesado,",
+        "text": "= Procesado,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "ERR",
+        "text": "ERR",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Error,",
+        "text": "= Error,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "OMT",
+        "text": "OMT",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Omitted).",
+        "text": "= Omitted).",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/10"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "VolumenMensajes:",
+        "text": "VolumenMensajes:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Número total de mensajes que coinciden con los criterios agrupados.",
+        "text": "Número total de mensajes que coinciden con los criterios agrupados.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/texts/36"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/texts/36"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/67"
+          },
+          {
+            "$ref": "#/texts/68"
+          },
+          {
+            "$ref": "#/texts/69"
+          },
+          {
+            "$ref": "#/texts/70"
+          },
+          {
+            "$ref": "#/texts/71"
+          },
+          {
+            "$ref": "#/texts/72"
+          },
+          {
+            "$ref": "#/texts/73"
+          },
+          {
+            "$ref": "#/texts/74"
+          },
+          {
+            "$ref": "#/texts/75"
+          },
+          {
+            "$ref": "#/texts/76"
+          },
+          {
+            "$ref": "#/texts/77"
+          },
+          {
+            "$ref": "#/texts/78"
+          },
+          {
+            "$ref": "#/texts/79"
+          },
+          {
+            "$ref": "#/texts/80"
+          },
+          {
+            "$ref": "#/texts/81"
+          },
+          {
+            "$ref": "#/texts/82"
+          },
+          {
+            "$ref": "#/texts/83"
+          },
+          {
+            "$ref": "#/texts/84"
+          },
+          {
+            "$ref": "#/texts/85"
+          },
+          {
+            "$ref": "#/texts/86"
+          },
+          {
+            "$ref": "#/texts/87"
+          },
+          {
+            "$ref": "#/texts/88"
+          },
+          {
+            "$ref": "#/texts/89"
+          },
+          {
+            "$ref": "#/texts/90"
+          },
+          {
+            "$ref": "#/texts/91"
+          },
+          {
+            "$ref": "#/texts/92"
+          },
+          {
+            "$ref": "#/texts/93"
+          },
+          {
+            "$ref": "#/texts/94"
+          },
+          {
+            "$ref": "#/texts/95"
+          },
+          {
+            "$ref": "#/texts/96"
+          },
+          {
+            "$ref": "#/texts/97"
+          },
+          {
+            "$ref": "#/texts/98"
+          },
+          {
+            "$ref": "#/texts/99"
+          },
+          {
+            "$ref": "#/texts/100"
+          },
+          {
+            "$ref": "#/texts/101"
+          },
+          {
+            "$ref": "#/texts/102"
+          },
+          {
+            "$ref": "#/texts/103"
+          },
+          {
+            "$ref": "#/texts/104"
+          },
+          {
+            "$ref": "#/texts/105"
+          },
+          {
+            "$ref": "#/texts/106"
+          },
+          {
+            "$ref": "#/pictures/1"
+          },
+          {
+            "$ref": "#/texts/107"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "5 Vista de Base de Datos para OpenData",
+        "text": "5 Vista de Base de Datos para OpenData",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "A continuación, se presenta el script que extraerá los datos en el formato indicado.",
+        "text": "A continuación, se presenta el script que extraerá los datos en el formato indicado.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "WITH Mensajes AS (",
+        "text": "WITH Mensajes AS (",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "SELECT",
+        "text": "SELECT",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "FORMAT(af.[Date], 'yyyy-MM') AS Periodo,",
+        "text": "FORMAT(af.[Date], 'yyyy-MM') AS Periodo,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/71",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "COALESCE(",
+        "text": "COALESCE(",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/72",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "CASE",
+        "text": "CASE",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/73",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "WHEN fnt_orig.Private = 0 THEN od_orig.Name",
+        "text": "WHEN fnt_orig.Private = 0 THEN od_orig.Name",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/74",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "WHEN fnt_dest.Private = 0 THEN od_dest.Name",
+        "text": "WHEN fnt_dest.Private = 0 THEN od_dest.Name",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/75",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "ELSE NULL",
+        "text": "ELSE NULL",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/76",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "END, 'Privado') AS MessageOwner,",
+        "text": "END, 'Privado') AS MessageOwner,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/77",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "af.[OriginFileNameType] AS TipoMensajeOriginal,",
+        "text": "af.[OriginFileNameType] AS TipoMensajeOriginal,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/78",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "af.[DestinationFileNameType] AS TipoMensajeTransformado,",
+        "text": "af.[DestinationFileNameType] AS TipoMensajeTransformado,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/79",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "st.[Name] AS Estado",
+        "text": "st.[Name] AS Estado",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/80",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "FROM",
+        "text": "FROM",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/81",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Audit.AuditFile af",
+        "text": "Audit.AuditFile af",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/82",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "INNER JOIN",
+        "text": "INNER JOIN",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/83",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Audit.State st ON af.StateId = st.Id",
+        "text": "Audit.State st ON af.StateId = st.Id",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/84",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "LEFT JOIN",
+        "text": "LEFT JOIN",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/85",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Messaging.FileNameType fnt_orig ON fnt_orig.Acronym = af.OriginFileNameType",
+        "text": "Messaging.FileNameType fnt_orig ON fnt_orig.Acronym = af.OriginFileNameType",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/86",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "LEFT JOIN",
+        "text": "LEFT JOIN",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/87",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Messaging.FileNameType fnt_dest ON fnt_dest.Acronym = af.DestinationFileNameType",
+        "text": "Messaging.FileNameType fnt_dest ON fnt_dest.Acronym = af.DestinationFileNameType",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/88",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "LEFT JOIN",
+        "text": "LEFT JOIN",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/89",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Party.OriginDestination od_orig ON od_orig.Id = fnt_orig.OriginDestinationId AND od_orig.IsOwnerFile = 1",
+        "text": "Party.OriginDestination od_orig ON od_orig.Id = fnt_orig.OriginDestinationId AND od_orig.IsOwnerFile = 1",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/90",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "LEFT JOIN",
+        "text": "LEFT JOIN",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/91",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Party.OriginDestination od_dest ON od_dest.Id = fnt_dest.OriginDestinationId AND od_dest.IsOwnerFile = 1",
+        "text": "Party.OriginDestination od_dest ON od_dest.Id = fnt_dest.OriginDestinationId AND od_dest.IsOwnerFile = 1",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/92",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "WHERE",
+        "text": "WHERE",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/93",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "af.AuditDeletionDate IS NULL",
+        "text": "af.AuditDeletionDate IS NULL",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/94",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": ")",
+        "text": ")",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/95",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "SELECT",
+        "text": "SELECT",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/96",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Periodo,",
+        "text": "Periodo,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/97",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "MessageOwner,",
+        "text": "MessageOwner,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/98",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeOriginal,",
+        "text": "TipoMensajeOriginal,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/99",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeTransformado,",
+        "text": "TipoMensajeTransformado,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/100",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Estado,",
+        "text": "Estado,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/101",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "COUNT(*) AS VolumenMensajes",
+        "text": "COUNT(*) AS VolumenMensajes",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/102",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "FROM Mensajes",
+        "text": "FROM Mensajes",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/103",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "GROUP BY",
+        "text": "GROUP BY",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/104",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Periodo, MessageOwner, TipoMensajeOriginal, TipoMensajeTransformado, Estado;",
+        "text": "Periodo, MessageOwner, TipoMensajeOriginal, TipoMensajeTransformado, Estado;",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/105",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/106",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/107",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Pantalla   Vista de resultados de OpenData.",
+        "text": "Pantalla   Vista de resultados de OpenData.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/108",
+        "parent": {
+          "$ref": "#/texts/14"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/109"
+          },
+          {
+            "$ref": "#/groups/11"
+          },
+          {
+            "$ref": "#/texts/131"
+          },
+          {
+            "$ref": "#/pictures/2"
+          }
+        ],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "6 Criterios de agrupación",
+        "text": "6 Criterios de agrupación",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/109",
+        "parent": {
+          "$ref": "#/texts/108"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "El volumen de mensajes representa una agrupación de ellos según los siguientes criterios:",
+        "text": "El volumen de mensajes representa una agrupación de ellos según los siguientes criterios:",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/110",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/12"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/111",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Periodo:",
+        "text": "Periodo:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/112",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Agrupa los mensajes por mes-año de procesamiento.",
+        "text": "Agrupa los mensajes por mes-año de procesamiento.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/113",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/13"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/114",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "MessageOwner:",
+        "text": "MessageOwner:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/115",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Agrupa según la entidad pública propietaria del mensaje.",
+        "text": "Agrupa según la entidad pública propietaria del mensaje.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/116",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/14"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/117",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeOriginal:",
+        "text": "TipoMensajeOriginal:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/118",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Agrupa por tipo de mensaje recibido.",
+        "text": "Agrupa por tipo de mensaje recibido.",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/119",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/15"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/120",
+        "parent": {
+          "$ref": "#/groups/15"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "TipoMensajeTransformado:",
+        "text": "TipoMensajeTransformado:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/121",
+        "parent": {
+          "$ref": "#/groups/15"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Agrupa por tipo de mensaje enviado (transformado).",
+        "text": "Agrupa por tipo de mensaje enviado (transformado).",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/122",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/16"
+          }
+        ],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [],
+        "orig": "",
+        "text": "",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/123",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Estado:",
+        "text": "Estado:",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/124",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Agrupa por el estado del mensaje (",
+        "text": "Agrupa por el estado del mensaje (",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/125",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "PEN",
+        "text": "PEN",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/126",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Pendiente,",
+        "text": "= Pendiente,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/127",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "PRO",
+        "text": "PRO",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/128",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Procesado,",
+        "text": "= Procesado,",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/129",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "ERR",
+        "text": "ERR",
+        "formatting": {
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/130",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "= Error).",
+        "text": "= Error).",
+        "formatting": {
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "strikethrough": false,
+          "script": "baseline"
+        }
+      },
+      {
+        "self_ref": "#/texts/131",
+        "parent": {
+          "$ref": "#/texts/108"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "",
+        "text": ""
+      }
+    ],
+    "pictures": [
+      {
+        "self_ref": "#/pictures/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "image": {
+          "mimetype": "image/png",
+          "dpi": 72,
+          "size": {
+            "width": 682.0,
+            "height": 458.0
+          },
+          "uri": "data:image/png;base64,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as6UdnXr1nW2EiVKiA2GDx8e0YdAgioAGFalShWnNdXrIRWId5deeqm2VtW8tm3b5myqT71NHn300YiCKtc5AMAwFVLPPvts08UAEKNWVbqZhI+gCgCGQ6p646I1FYifVlU1ep/XfHgIqgBgyAsvvBAX/VIBnOjll1+WVq1a8doPA0EVAAwYPXq03HfffbxRAXFIDXxSy6JWrlzZdFGsR1AFgBgbO3asDBw4kJAKxLG2bds6LauBQMB0UaxGUAWAGGnfvr3MnDlT+vXrR50DkGuvvVaeeuopBleFQFAFgBh44IEHnJDapUsX6hvAMUOHDpURI0YQVgtAUAWAKDrrrLNkwoQJ8vzzz0tKSgp1DSDfSfG//vprOffcc+kSlAdBFQCi5Oabb3ZaUa+66irqGEBIKqR+++23zipTzLP6B4IqAGjUuHFj+b//+z/55ptv5D//+Y/UqFGD+gUQtscff1w++eQTad26Na2rLKEKAJGrWbOmsyxir169pHv37lQpgIhccsklTgvrmDFjZPLkyfLll19qX3LVLRJMFwAA3KZEiRLSrFkzZ+vYsaMTUkuXLm26WAA8pFy5cjJ48GBnW7x4sYwfP94JrWvWrImr0EpQBYBCNG/eXFq0aOF8zf1ehVUAiIUWLVo42zPPPOP0Y33//fedr1u3bnW2nJwczz4Q1gRVNTVDcailB236ZOHG+9GpUydns6G8Rak/2x570/dBjRo1cVyd1PNQtVDGsuzPPvus03KhtrJly+b7FUV/jkUqv8c592ehfpfffpT8/v74n4e7jK2qg6I+/2x7vanX2Pnnn1+k2xRU57Eu93nnnee6ckdjPub27duf8LPt27fLtm3bjgVX9X16errYINIFDXxBm149AAAAwFGM+gcAAICVCKoAAACwEkEVAAAAViKoAgAAwEoEVQAAAFiJoAoAAAArEVQBAABgJYIqAAAArERQBQAAgJUIqgAAALASQRUAAABWIqgCAADASgRVAAAAWImgCgAAACsRVAEAAGAlgioAAADERv8PhetGSOQVSPUAAAAASUVORK5CYII="
+        },
+        "annotations": []
+      },
+      {
+        "self_ref": "#/pictures/1",
+        "parent": {
+          "$ref": "#/texts/66"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "image": {
+          "mimetype": "image/png",
+          "dpi": 72,
+          "size": {
+            "width": 738.0,
+            "height": 93.0
+          },
+          "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuIAAABdCAYAAADg4AO2AAAd7klEQVR4nO2dXYgb57nH/+uaJhAct9QXJb1J7NEm2RWYQrYYiWLYxu1Km4+ttyhQOCzGQTrdlJUwZ8Ghe1VUbLoHIy146QoHI9Kb6GBXduKVaxuDL1aYOnAwrJ3GGq9z49CLHFrHDcSFRod3PqQZrWY0+p6R/j8Q9s6r9/uZ533meZ93NPLFF1+U//Wvf6FcLoO0xsjICL797W9j586dHEJCCCGEEOKIncII/+53v4sdO3Y4y0G28c033+Dvf/87DXFCCCGEEOKYncITTiO8PcT4iXH86quv2iyJNAN3IgghhBDiZRhL0UGeffbZThZHGiAefv75z39yJ4IQQgghg2uIf/311y1X8PTTT7ecl5BGHnGebSCEEELIwHvEf/7znzdd+J/+9Kem8wxTXHkjGDJECCGEEDK49DE05TLmn3oT79VJOXB0Ge+tLkDqev0n8NKdG1jobkUtPdzwIYYQQgghZLDpc4z4ASxvM4RlrMyPY3x+FE9Wp3rUjv4Z5fUM7lZ2HwghhBBCyAAb4kajURiLjf5uDQkLx5ZxbvwiLq9OoVemeL9obZyuYmHXYZzFEZx/vIJDprQtnJ7cj+O3JnDy9nW8s7djTSWEEEIIIR3EIy8PF17ygzh4cB7zBw/i4PxlyMbUy/M4+NRTeEr5HMT8ZaOn+yBWZKu/tbIPihCZm1gcV9Osy2s+DtzqI3jmmWeUh5faj3PO4sOrNZe2Cjh3q7X2EkIIIYQQl3rEa723jf5uDRmXTy3i5tELFW/45flxnHvpDm6sqnEj8spBjM9DC125jFNvAu/eeYIpSaTNY/zECo5NOY0xl7Bw4wL+WglNuYz58XbKq/Lll19ifn6+7vvFE4kEVldXsbi4CFk2PRk4ZAJHjgBnP7yKlUNVn/hW4RxuHTmCI2c3WyiTEEIIIYS40iNe67Vt9HdjhBda9zzrn3GceOkC7lTiwy/j4nsHMBuumsFSeBYH3ruIqqP6PZxYvwxhz0oLq3hyo92Dnp0pT7xXXBjh9TzeqVQK77//PpLJZMutfPH1WUyc/RBVp/gWCueAk4nXa765hdMLk5icXMDC5CQmF65iy5h6dQGTu3Zhl/KZxMJVZ2nYOo2FST1tF3ZNLuD01vZ69fRJ0YZdk4bvtN4uQgghhBCvs6P/hzWf4MkT/XMHF44CN8/dq35Fvoc7tQb7+CJu4g7uKY7kKazeuYDxcycwrnznIObNsSdN0unyrLl27ZrSn5bZF8LshCE8RYSlYBahmrjwqwv7ce7FM7h+fQUr16/jzIsnsL9i1V5F6jDw7u3HePz4MW6f9OPsidOaQWyftrD/uEhU0pT02U0c379QeTAQ9R7Hu7itpN/Guy8CtzrSLkIIIYQQ7+Oy0BQJU6sXcPSpN3Hq8gIUp7g0inEcwKzdG02kKazemMKqFi9+9M2jWAm38QaUTpdXMza6V7z98dqL0OwEjmvhKSIsBbNnsBf3Dd+5ig/PTmD2dtU63xuaxcTxD3F15ZB20PMsThRex77QIex9ZwWP3zHWYZV2CCuPH5tbo5T7qanek7cPQa15Lw698y6OHD/RoXYRQgghhHibPoem1GMKx5YP4L0TK9qBzCm8cfQmFk9VD2iKGPGnDmrp8goO6v+vMI7RitF8E39Vv4jLKyfqvrfcRMPyWqMzY7MdxXhVwlPUsJTZWnf41j1s4haO7zeEkOw/jlvYxD3FvXwIK7fPw3/uBPYr35nEQiV2xC5NiR1RQ0tM5Rrr9WPU6q0tbbWLEEIIIcT7uPKtKUoM+M1zWNes4anVO7iAExjXQlPGz43jwnta3La0gPdm/4qjetqbdzB+YVU76DmF1QtHcedNkXYUF0dncbR+jXhJGPvjT2FetiuvdYT32/ixomlDfa8WnnK6flgK9o7CD+GZVkM8qh/Dqw33HlJCQ5QQkPN+bB5/uxrHbZkmQlMO49PXz+CMXubtk5gw1asb1fXa3Wa7CCGEEEI8Th9DU6aw+sTCvJUWcOPJgvECplZv4Mmq1ddXcWPBInFqFTeMGSvlGuuXsLD6BJUipmzKaxGnBnbz4SpaeMrx45g4eVsLAzFyCK8fOYzDqasIrahhIlunJ7H/3CxuX38He7dOY/Jt4Iz4fyWP5sm2S1OYwIv79mppW7gq3tgCv0W9W7i6cAJnAZxst12EEEIIIcNkiPMn19uj1sA2jme7Y6vGVtcJS9E4tHIb5xfexv5dh9ULE0dw/oxm4O59B2dmF/D2rl1aWMkEjpy/rsZo26XhEBLnP8Tb+3fhuJ52RPi4zfWerNQ7gSMnZ3EE59pvFyGEEELIADDy8OHD8p49e/rdDs/zxRdfKK8rNCJ+uKf2F0eN6Gk7drgyQqjzCC/3/k/x7rZfA20d8a528cNIhBBCCCEDHZpCmkcYiVbhJoNtQG7h9OR+nJu9jetK0PcWrqaO49bESezrd9MIIYQQQlwADfEu88c//hHDyV68c+Y8Pn17P3apsSuYmDiJ86aYb0IIIYSQ4YWhKV0MTSHdh6EphBBCCPEqQxKcTAghhBBCiLtgaEqHvbOk93z11VccdkIIIYR4DhriHYJvniGEEEIIIW0Z4hc/utJUAYQQQgghhJAOecR/cfg1uIXPP/8czz33HIaRYe672+HcEMoCcSvUTxwnAs/cBzysSQghhBBCSB+gIU4IIYQQQkgfoCFOCCGEEEJIH6AhTgghhBBCSB+gIU4IIYQQQkgf8LAhXkBsZAQjpk8QwVihxbJiKLSUL4i0jB4jIx1U+7utbjmNoBiLYBo9b1YbyOmY2m5tHmO9H9QOzkudjzIfrcqZB+Zeqdt535qbb6fj1onx7UQZAspCoa3x6T6FWFCpr6Ulo+P0ai2pt25a6JOO1dePNbIdhGxa6NeGstkp/dEJBmOtGAY8bIgLAkiVyiiXtU9pCf5MuAXFGsJaeQ0heI0icpfMt5F8KYcivIWcDsKXA5b0uSwtATkfgt7S3gAkxDf0PqQQQBTrumxuxCF1VM5cNvdSHBsO+9b8fDsdNzfdx5SFUFvj02XkNJIZv1LnmjsEpn/rpvLZQNxu0IfKeJIwHUFd/YrIdPdls+N4d60YFjxuiNcghTATBTbvec2Aa41oKiW0heGJVobQFalUFJ5BTmMuAaSyawjpGk4KYS2bAhJzHvOk9A7Pzj3nu+N4VhYIcSmSaolvu6ci094zw6kf3M9gGeJyAfkM4B9Vbxa5ULP9XZANT/dBxJStSfGUb95OssxXkxaMJbFpqt46X1cYnUYECSzrDS8sI4EIpkfNX7Nul3l7uBrWY3W9gJhpO9kcUmCqJxhUxlhPtmxD6S6KgQi26TdpGpFAEXdLYgt5BCN6G7S5q5SbDqppmscmbQh5MHpYnctCNzHImaneBmNZT5banXvb8Wph/ms8Zu3Md1P3p0nOasfXqn/2ctwbKAu21JOBBrLnWJbF930JFJFBWJMdx/rBoi65BTlz1VpSrbnOvS8jPaePV4O5cG2/mkToI+RQcSTLl5BDVW856se2XQRDmE5TctSqHvf4WgGrsgcPjxviRSR8hsn2JYFUSd1qFJ635Jhp+3ss6TOFrYzNZFGu3SIR+cKbiFTyRbAZ1jyzShoqadmZiLN8Xd1CCyCTVztVyGcQqN06sxkHOT2HhH9du75eCeuxuq5s/evbyVofkViuGD7GsSktRZy14d6meHKqs90nYdSv7m6E1G0OxTuhbqnpW23CS1FEdEafwQxymEFW2+6ueNRblYWuU8TmWLYanpHQ2uRIltqbe7vxamn+HdbrZL4b358WcrYNC3lw2o+eMnyy4ISqDDSqr4n2l+LYqITDbCCOxmNslkVDXetRZa7mTHXr7XKuL3u7ltSsm4ZY4frzLSGe1cerwVy4bo3sTHiKKSylY/1wKEct3rte1w+yZdkDyMOHD8tPnjypfP7n3IdlNyHaV5/1chSBcqpUP7WUCpQBbPsERIZSqhxAtLxuKkv9W8kXraYoqVE13/a0ahvs8nW+76VyKoCyWp3W9lK1D+X1aBmBVLnkaBxQRiBajqbWyyW9qVbXlaRoORAwlmXV/5qxsWqDoa0N+6hfS6XKASWPoc9159RB/dvytTs3xjGsLdeuvXZyZpSlTs59/fFqZf6N5bU9303dn0Y94EwebPthLMMhlIUWZcHuXqlzzYnsOZbl2jZa3W+1ZdvIZjNy1u21pNV108l49bNfncb23hV9VnSV0E3GObXrh0Md1IQctazHvb5WlKzL7sj8ugiPe8QbENWepgyfDdsTKV5ExMVnkJxLIhOdqe/RtRoH5dBEGaXsDMaQx5xPe4OA1fVCTD1kl9XLWYfjKFSrNvjGECgatgBh2AosBjDmq/YxXyjhbjGKmbi2bVjIW/fZaf3DOvd2dGL+25rvLtOOHLsWD8pCL+bMqv29wIty5mS8vNivtsJTzGEpfaHte8iD+kHq473bY3YM8mGLQCaJdCXOSY1ZajSRlXyy8XR9QDmkIYm980we1SLzyDjI121Ciymx24jUYqipcajEV0shxOOLiGgHXS2vK2EFY/BV4uTylfg/R2NTby6kONRzmSL+EtV09QRn5SS/CE/ZTOpKRN02TIQzCDiw3FqVhe6ziXuGOLy8LmdNyFKrc29HK/PvuF6H822FnZw5xWk/essQykIP5syq/XXb2GHd3ba+7MNa4mS8vNivtsJT5sxvS3HcD2kUfnFft6GrOnkPeU0/yA5kcVAYWENcWfDXI8glfdX48YgWP94wnx85PYbOl4N/XTMQQmsQ4VFJLW0uL14E5SBft1GeHC1eP2UzDlI8ixSS8Clxgj7kkEI2LjW4ntOuq/2vUGdsog7nQopvQISQ6Xn1dNPTeGgG/mI1HlxR+HCoxFuVhR6Qy89V5AW6vDQjSy3OvR0tzX8T9Tqabyvs5MwhjvvRY4ZRFro9Z1bt397GzuvuZvVl79aSOjHi2vvULcdLGkUkoB5uvTTt1n516e0pxZq3pTjuRwjC9tXHeu7eWGs7B51avzymHyQn9+6AMCJiaPbs2VO5cPGjK/jF4dfgFj7//HM899xzGEY83fdCGsHwXSwN6PtC254b5c0NAzQ+/eqPC+SMsjDgsu1BPL129BCO02Drh889ch8Mrkec9Jia1xUl7yJS4kI8FBRiGPElAKfx+u1VRjlzMz2VBUKIp6B+qAs94i7GK09zwwjnhlAWiFuhfuI4EXjmPqBHnBBCCCGEkD6ws97FR48ewS0888wzSqjDP/7xD3znO98Zqn9/8IMfKP8S9yHk0k33CekflAXiNiiTHCcCT3jDLUNTDv3kx9i9ezfcgDB2vv73cDrun/7WN66ZB7JdLjk3hLJA3Aj1E8dp2HnkoTXaExbu97/3LIYR4RknhBBCCCGDiScM8b/935cYRhiWQgghhBAyuHjCEKdHnBBCCCGEDBpD4hG/j88e3MdnHWpPr+qgR5wQQgghZHAZCI/4Z9fieO17zyrf+/73XsXitfvVRCXth/j1r2I4oKQ5yXcfmSn9uv6J47pVA+zq+IOhjqk4rj/oZIx4AbGanykeGQkiKH6r2PL7MVilNocoK4i03JHCBvPXw2rGWk7HEDTMU4yDNxxQFojraHbt8BLdWJtkFNJBjAzE+JABMcR7K5S2HvEHq/j1W8Cxj79Uvve3jw/jk7diyCgG7xUsvnUHb3z8JT66fE1L0wxq23yCH+G3eprySWOybgMa1PGbah03Z4Bf/mrVsdfcmUc8gFSpjHJZ+5SW4M+EUX9qQljjz073BTkdhC8HLOlzVVoCcj4EaYwPHZQF4g6aWTuG+34dGfEhmSv2uylkQNnhBaG09Yi/MI+PhJH8gv73z/DGxF9QEs7tBzI+mTiMn5rSzqJwrUE+3Efp1jgkPc2OJup4/mcv4pVbn2Krm29NkUKYiQKb9+iqdg1yGnMJIJVdQ0jSrkkhrGVTQGKOuwrDBGWBuBWuHfWHJb6hPKhsLEV7PSNkSNjhBaFsLkZcGNE/gm+f+O+n+NiUtg/SmIN8Cndw6tir9cNdTNmc1/HZn8/j47lpC896h2LE5QLyGcA/Kmlb4kHEYuLhSYRJaKEp27bK9a28AmJB81alMXxCLlRDK4KxJDZN1daEXRT4IFChdBfFQATTuhGuI00jEijibqn5aSYehbJA3Irt2mGv401hd0GxxuhFWuWRkTasNdWQGKvrDeq3WZsIcTsDESNeRcR2/x6f/G4NUd1DPSbh+ZpvfSLft88nvNwA3givqSElH9SGrdTQqI4Hq0qc+IHfAP8Rrlj6HfKIF5HwGYxnXxJIlbAWMjRvJouyMSRFimMpmkFe13GFPDLRJcSFl3bDuFUZARLLqsEuPHlhIKJtZWZnItUKlLTNSprItxmmp7cyPPc2xeqGWjsckDDq5+7FMEFZIO6hibXDTscXYvAlqmtDKbKJ8HJBXReSY6ZwvLGkTwl9kdNzSPjXtevrlZAYq+t2ZdmuTYR4AE8Y4o484g+uYHHqh7g4s4aP/tPe2H1Z2mefTwkpuYboq+rfz786j2Nzf8HFP9/H9WOGA5zHrjirQylPjUOHnUHfiRjx8gbW4kaTz4/RSjxEldBMFBnNEi/kM4jOhKqeDd0j4Usgg02IKBf5Ug7F6Az0oqXQKPxaWWqaMOSNhn4RuUv0iivDoVrb2D4aMlQbffv8kMGEskDcg/O1w07Hi4fLQGqxujaIXfO1kJqnmEBYN/Z9YSSKquNBmo4gkAkr3vPYJWCxVFYeAKyu25VltzYR4gUGwyMuPM6v/AL4r/81G+H7XsQrd2XD4cj7kO86yGfD5CnDAc5TP21ch5EX5hHSDPq+/7JmaAbRTBJpOY1kJgrFDheeDXGgMKsr5nUwKq4D+MYQKOaw7blEvoRcMYAxXycqIZ6AskCGiajm3TZ8NoTFLMWxIbzn2RmMIY8534jq3ba6blcWIR5nADziV7D4ynG8/MGXWNY82BVekPDyrfO4onugH/wZF28dQejVBvmuxdXXFT6ovubwl9kf4Y2f1THW7eoQ5RhfWfhgFaesyun5e8RDWEwBubkckFpUwlbUbfMx+DTdJhfylVg7xZOXyRti//LI6GmKF0MY9doFxbgPILItKHpIkeJQz2VWYydFPGZMPcFZ9TKRwYeyQDyInY4Xa0MxsVxJU17oECtU81QXDeUMkhqCor11TQohHl9ERHvBgNV1u7Ls1iZCvIDnPeKf/eH3eB/A+2+Z3/utvsv7p1j+YBwXX3kWr029iu+/ch4vf6C+htA236tp3PwdcOoV9dqB/wZ++/G1aty5Ces6lHJmquWoaYb49X56xDXliiIqBrMUzyKFHHxazOBc3vDl0BpKKSDpq6YFKgXFkV33I1fZNszBv04D0zTW8Q2IkHt9/JR4zEiJHp0hhLJAPIedjtfWBj3Nl/NjfTGk5Ykgl/SZdJ4SgqKsNUltrfEhhxSyccnyul1ZtmsTIR5g5OHDh+U9e/ZULlz86AoO/eTH2L17t33OQgwj+RklFqybPHr0CF//e0cHfvVSeK/3bTtU2Tk6X8fT3/qm8TyQviDkknNDKAvEjVA/cZyGnUceWqN3tpwztIZyd23wCsKb3N7P3O/D8w690G6qQ3jERRwcIYQQQggZPDwRmtKeEe5duhsjTgghhBBC+smAvUd8sOh2jDghhBBCCOkfnjDE6REnhBBCCCGDxk67QHc3ecRFmIbwEA/jv8SduOkeIf2FskDcBmWS40Q8boi75bSpUCb6gcVh+1cY4W6ZB+LdE9mku1AWiNugTHKchp1HHnKUeSI0hRBCCCGEkEGDhjghhBBCCCF9gIY4IYQQQgghfWBIDHEZsixD9nwdhBBCCCFkUBgIQ1wuxBAcGcGI8gkiVjCYw0qaD3Nzc/ApaU7yyUgH9ev6JwZDVjN2daQNdQRjMDatzV4jHQwiXVuenEYwmG7wQFBAzK4/beG0bPG92jEOImgcPC8j5qFmHEyyIORk2+SRwaSOrAdr9JTyHYv7WZGjejqpqldiDXSBrY4kQ8gg61+Le6ktZBTSQYwMxPgQzxvirlPochpzYWCpVFbeNlIuRbAZntNuwgJi4U1ESmVsbGxoaZpxZJtPEEBKT1M+awjVbUCDOhLVOkoRIDzXyEh2ioTpCJC7ZC5NvpQDItOQ0C9CWLMcq1pqxri0BH8mbHqQadXodRtyOghfzihvS0DOhyCN8SGhRtazS0CymfmXEN/QZSeFAKJY18vaWMOinS5oqOvIcNIh/TvgCN09MuJDMlfsd1PIgNKcIe5GhS7FsSEMP93ylKYRCRRxtyTaew+bgQimTWkZ5AsN8qGEu0U/Rp1Ys03UIU2PIVC8i1Knuq5a4gbDXoa69vbPDG8LKYSZKLB5b8AsBO2BLJU1ylsIa9kUkKBBNJRU5n+5Iw+QtrrAVtcRMuD6t02k+IZi72wsRfvdFDKgNGeIe0KhCyM6gDGf+O9dmJ9hJYz6HeRT2EQyFmzs+W+iDuGhKkZnHHqLHSDGHzlUHGHyJeSgPxQUEDNtZVuHQljucmie5rQhpMLowasfdmMMTXHeBq0hyGcAv/YEZN+uIGLK/AQRnEugiAzCbvWKCxkxPqzBzfcP6RnGh/au6oJGuo6QGv1r0rGqXrXbDbcKwXQa/lkNibG63qB+Q1owlsQmJ5QMT4y42xS6uImT2ExlEdcXIP/otjCN7U/8NfmElxtAZCarhpSsN/D8N6pDUWoj8CWA6EwnB8scnmIOSwlhTd/K1nYv6nrfhLc2OWYKmRhL+gzbkxnkMIOstiVe8eAWYkp/IpWwm02El2tLb9SGIhI+g6HuSwKpEtZC+u6LGvJjtfsypszPBjay+la905CY3iLf26wrI/pDGz1QpLu6oIGOJEOKjf416dg1hOz0sdVaYLO2yOk5JPzr2vX1SkiM1XXbdUrbqdfrz85E+jmohPTSEHeZQpeF99WHXCSLjQYN0j2ulvkUz/8G4prrXwrFsRQtKotcIWZQXDbBdKY6lPI0Q7TDoTzVLentYSmKl0L3LvgSyGATtc8gipe+mEBYV8i+MBJFo3EYxVI8pC7o0ij8BuMykFqszL2yfWfU4I7aUBuHv4E1rUB192CpKltSdQ5U/BitbM24G0m1tuucDZCh2uje6AdxN3a6oFkdSYYBa/1bq2Pt9LHVWmC3tghZDWTC6kHjS8Biqaw8AFhdtytL32mu1B+qrlOEDK4h7jaFLjzOPiV43dwe3xgCJgNINXwa5rMhtGZQXEJDNKrDiBTHjMmY7OSWdM1WtPBSiMOBWb2967CMcItqHgjDpyPz2kwbBhkhI0VD2ICOmDNX7SiRnqLMfxQzyvOrD2P1wpSUsKYx+NrRBS3qOkLaxmpt0ZxTpewMxpDHnG9E9W5bXbcri5ChM8Rdp9ALiPkS8K+LJ+ea9ggPrtEAMi18NvkKMTUuzhDnFs4E6h+CtKtDlGN8ZaGcRtKqnHa3pOfMW9FqOMQYfNoFuZCvGzeneiCSSFc7q8R1Nzo5L7y8xcRyxbuvnCyvyeS0DbBrV1fHrkdIcajnMo2yUEBMPcHpjh0l0lsq87+ohVOJ+ziATDJtkpF0MoOA47cg1dcFtrqOkDb1sdVaYLe2VNYLKYR4fBER7ZCo1XW7spQdx0zesF7nkeGsksE1xN2n0OV0UrnpMmHzO1FVmzCEtXU/cr4RBINBjPhy8K+rccS2+UJrEOHQSW0bTA2d27AwmKzrUMqJVMtR0zpveClb0kXzVrQUzyKFHHxav+byVpnjyK5HkEv6qnGCEXOcYF20McrpY5TzY33RnMlxGyzbpY5rw7GTRpVDb+GOvzu2c4jtWrMsqOPsjodZ0vN43LnkNmeGIiNLQH45qOiS4HK+aYdHPV1gryMJaVMfW60FNmuLujYktbXBhxxSyMYly+u261TNei3WmQAnlXiIkYcPH5b37NlTuXDxoys49JMfY/fu3fXfhSwCs2qIKoZ5dxr46NGjum1p/lcvhTKRuvh+7c7X0Zm+k27AuSGUBeJWqJ84TsPOIw/ZTzub+bJyCCMODyIJ+3gA6iCEEEIIIYPCQPzEPSGEEEIIIV6DhjghhBBCCCF9gIY4IYQQQgghbooRF4HubsFNbek1w9x3t8O5IZQF4laonzhOw8xujxzUtDTEvdQBQgghhBBCvAhDUwghhBBCCOkDNMQJIYQQQgjpAzTECSGEEEII6QM0xAkhhBBCCOkDNMQJIYQQQgjpAzTECSGEEEIIQe/5f5u7JWLXVLQdAAAAAElFTkSuQmCC"
+        },
+        "annotations": []
+      },
+      {
+        "self_ref": "#/pictures/2",
+        "parent": {
+          "$ref": "#/texts/108"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "picture",
+        "prov": [],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      }
+    ],
+    "tables": [
+      {
+        "self_ref": "#/tables/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "table",
+        "prov": [],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "data": {
+          "table_cells": [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "VERSIÓN",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "FECHA",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DESCRIPCIÓN",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "01",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Elaboración del documento",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          "num_rows": 5,
+          "num_cols": 3,
+          "grid": [
+            [
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 0,
+                "end_row_offset_idx": 1,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "VERSIÓN",
+                "column_header": true,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 0,
+                "end_row_offset_idx": 1,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "FECHA",
+                "column_header": true,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 0,
+                "end_row_offset_idx": 1,
+                "start_col_offset_idx": 2,
+                "end_col_offset_idx": 3,
+                "text": "DESCRIPCIÓN",
+                "column_header": true,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ],
+            [
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "01",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "start_col_offset_idx": 2,
+                "end_col_offset_idx": 3,
+                "text": "Elaboración del documento",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ],
+            [
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 2,
+                "end_row_offset_idx": 3,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 2,
+                "end_row_offset_idx": 3,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 2,
+                "end_row_offset_idx": 3,
+                "start_col_offset_idx": 2,
+                "end_col_offset_idx": 3,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ],
+            [
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 3,
+                "end_row_offset_idx": 4,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 3,
+                "end_row_offset_idx": 4,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 3,
+                "end_row_offset_idx": 4,
+                "start_col_offset_idx": 2,
+                "end_col_offset_idx": 3,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ],
+            [
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 4,
+                "end_row_offset_idx": 5,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 4,
+                "end_row_offset_idx": 5,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 4,
+                "end_row_offset_idx": 5,
+                "start_col_offset_idx": 2,
+                "end_col_offset_idx": 3,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ]
+          ]
+        },
+        "annotations": []
+      }
+    ],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {}
+  }
+}

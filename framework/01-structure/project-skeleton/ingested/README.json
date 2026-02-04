@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "source_path": "framework\\01-structure\\project-skeleton\\sources\\raw\\README.md",
+    "source_filename": "README.md",
+    "file_type": ".md",
+    "file_size_bytes": 197,
+    "ingestion_timestamp": "2026-02-04T16:01:06.608348",
+    "docling_version": "unknown",
+    "title": "",
+    "author": "",
+    "creation_date": "",
+    "modification_date": "",
+    "page_count": 0,
+    "word_count": 27,
+    "language": "",
+    "custom_properties": {}
+  },
+  "main_text": [
+    {
+      "id": "sec_0_default",
+      "title": "Document Content",
+      "level": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "self_ref",
+          "level": "#/body",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "parent",
+          "level": 0,
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "children",
+          "level": [
+            "cref='#/texts/0'",
+            "cref='#/texts/1'",
+            "cref='#/texts/2'",
+            "cref='#/groups/0'"
+          ],
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "content_layer",
+          "level": "body",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "meta",
+          "level": 0,
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "name",
+          "level": "_root_",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        },
+        {
+          "type": "paragraph",
+          "content": "label",
+          "level": "unspecified",
+          "style": "",
+          "page_number": null,
+          "bounding_box": null
+        }
+      ],
+      "subsections": [],
+      "page_start": null,
+      "page_end": null
+    }
+  ],
+  "tables": [],
+  "figures": [],
+  "code_blocks": [],
+  "equations": [],
+  "hyperlinks": [],
+  "footnotes": [],
+  "headers": [],
+  "footers": [],
+  "raw_text": "# sources/raw\n\nArchivos originales (instantáneas) del proyecto.\n\n## Regla\n\nNo editar ni transformar estos archivos aquí. Si cambia la fuente, reemplazar el archivo y regenerar `ingested/` .",
+  "_schema_version": "2.0",
+  "_format": "lossless_structured_document",
+  "docling_native": {
+    "schema_name": "DoclingDocument",
+    "version": "1.9.0",
+    "name": "README",
+    "origin": {
+      "mimetype": "text/markdown",
+      "binary_hash": 17149798765016852954,
+      "filename": "README.md"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/groups/0"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "inline"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "title",
+        "prov": [],
+        "orig": "sources/raw",
+        "text": "sources/raw"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Archivos originales (instantáneas) del proyecto.",
+        "text": "Archivos originales (instantáneas) del proyecto."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [],
+        "orig": "Regla",
+        "text": "Regla",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "No editar ni transformar estos archivos aquí.",
+        "text": "No editar ni transformar estos archivos aquí."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": "Si cambia la fuente, reemplazar el archivo y regenerar",
+        "text": "Si cambia la fuente, reemplazar el archivo y regenerar"
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "code",
+        "prov": [],
+        "orig": "ingested/",
+        "text": "ingested/",
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "code_language": "unknown"
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [],
+        "orig": ".",
+        "text": "."
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {}
+  }
+}
