@@ -1,0 +1,113 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "delta",
+            "type": "string"
+          },
+          {
+            "internalType": "enum MessageDeliveredStandaloneContract.Operation",
+            "name": "operation",
+            "type": "uint8"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "hash",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct MessageDeliveredStandaloneContract.Asset",
+                "name": "asset",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct MessageDeliveredStandaloneContract.Data",
+            "name": "data",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct MessageDeliveredStandaloneContract.Event",
+        "name": "e",
+        "type": "tuple"
+      }
+    ],
+    "name": "Delta",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "deliveredDate",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "messageHash",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "fileTypeCode",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "sourceSystem",
+        "type": "string"
+      }
+    ],
+    "name": "createMessage",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAssetSchema",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]
