@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "c4df7837-edbd-4131-98ee-4fcd6f0bfc6a",
+		"name": "Infoport Translate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3129645"
+	},
+	"item": [
+		{
+			"name": "Obtener token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const data = pm.response.json();\r",
+							"pm.collectionVariables.set(\"access_token\", data.access_token);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://keycloak-dev.infoport.es/auth/realms/IONE/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"keycloak-dev",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"IONE",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register received",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"guid\": \"453624cf-1783-4722-a634-585ed2b11489\",\r\n  \"receivedDate\": \"2025-11-21T09:13:45.022Z\",\r\n  \"messageHash\": \"a9f217105d37f04dea9222b4a5f4133f5c483d948584734f1ebcb91ff3a62c93256beee279f1da254310c66982c683de257c74e5859e61c53cfa5629d3188b5e\",\r\n  \"sender\": \"test-sender\",\r\n  \"fileTypeCode\": \"test-filetypecode\",\r\n  \"sourceSystem\": \"test-sourcesystem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/Message/register-received",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"Message",
+						"register-received"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register delivered",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"guid\": \"385442e4-fba6-4ab9-951d-af1155f71942\",\r\n  \"deliveredDate\": \"2025-11-21T09:16:42.991Z\",\r\n  \"messageHash\": \"a9f217105d37f04dea9222b4a5f4133f5c483d948584734f1ebcb91ff3a62c93256beee279f1da254310c66982c683de257c74e5859e61c53cfa5629d3188b5e\",\r\n  \"receiver\": \"test-receiver\",\r\n  \"fileTypeCode\": \"test-filetypecode\",\r\n  \"sourceSystem\": \"test-sourcesystem\",\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/Message/register-delivered",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"Message",
+						"register-delivered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hash text",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"prueba de texto\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/Message/text",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"Message",
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify received",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/received/1d80b1e5-6388-4291-abf6-4e7886907a53",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"received",
+						"1d80b1e5-6388-4291-abf6-4e7886907a53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify received transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/received/1d80b1e5-6388-4291-abf6-4e7886907a53/transactions",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"received",
+						"1d80b1e5-6388-4291-abf6-4e7886907a53",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify received urls",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/received/1d80b1e5-6388-4291-abf6-4e7886907a53/url",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"received",
+						"1d80b1e5-6388-4291-abf6-4e7886907a53",
+						"url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify delivered",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/delivered/fa04c8ca-f52c-45b0-8c44-d0f0bb169658",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"delivered",
+						"fa04c8ca-f52c-45b0-8c44-d0f0bb169658"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify delivered transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/delivered/fa04c8ca-f52c-45b0-8c44-d0f0bb169658/transactions",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"delivered",
+						"fa04c8ca-f52c-45b0-8c44-d0f0bb169658",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify delivered urls",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/VerifyMessage/delivered/fa04c8ca-f52c-45b0-8c44-d0f0bb169658/urls",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"VerifyMessage",
+						"delivered",
+						"fa04c8ca-f52c-45b0-8c44-d0f0bb169658",
+						"urls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translateblockchain.test.infoport.es/health",
+					"protocol": "https",
+					"host": [
+						"translateblockchain",
+						"test",
+						"infoport",
+						"es"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": ""
+		}
+	]
+}
